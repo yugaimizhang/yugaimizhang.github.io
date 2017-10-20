@@ -1,0 +1,394 @@
+*{
+    padding:0;
+    margin:0;
+    border:0;
+    font-size:12px;
+    font-weight:normal;
+    font-style:normal;
+    list-style-type: none;
+}
+html,body{
+    width: 100%;
+}
+.box{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clearFix:after { clear:both; display:block; content:''; }
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/iconfont.woff') format('woff'),
+    url('../font/iconfont.ttf') format('truetype'),
+    url('../font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:42px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.mo{
+    width: 100%;
+}
+@media screen and (min-width: 600px){
+    header{
+        width: 962px;
+        margin: 0 auto;
+    }
+    header img{
+        float: left;
+        margin-top: 14px;
+        margin-left: 32px;
+        margin-right: 51px;
+        width: 168px;
+        height: 53px;
+    }
+    header ul {
+        height: 24px;
+        margin-top: 28px;
+    }
+    header ul li {
+        float: left;
+        margin: 0 1px;
+        background: #3b6cbb;
+        width: 77px;
+        height: 24px;
+        line-height: 24px;
+        text-align: center;
+    }
+    header ul li:hover{
+        background: #f8c44f;
+        color: #99281f;
+    }
+    header a{
+        color: #ffffff;
+    }
+    header span{
+        display: inline-block;
+        padding-top: 20px;
+    }
+    /*banner*/
+    .banner{
+        width: 100%;
+        height: 657px;
+        border-top: 1px solid #2e4e97;
+        background: url("../images/bg1_02.jpg") no-repeat center;
+        background-size: cover;
+    }
+    .banner div{
+        width: 962px;
+        height: 657px;
+        margin: 0 auto;
+    }
+    /*lane*/
+    .lane{
+        width: 100%;
+        height: 857px;
+        background: url("../images/bg2_02.jpg") no-repeat center;
+        background-size: cover;
+    }
+    .activity{
+        width: 962px;
+        height: 857px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .guo{
+        width: 962px;
+        height: 725px;
+        margin-top: 81px;
+    }
+    .xian{
+        height: 63px;
+    }
+    .xian span{
+        display: inline-block;
+        height: 63px;
+        width: 481px;
+        text-align: center;
+        line-height: 63px;
+        font-size: 36px;
+    }
+    .xian span:first-of-type{
+        color: #ffffff;
+        background: #a9e4ef;
+    }
+    .xian span:last-of-type{
+        color: #99281f;
+        background: #ffcd24;
+        border-top: 3px solid #d2b942;
+        border-left: 3px solid #d2b942;
+        border-right: 3px solid #d2b942;
+        box-sizing: border-box;
+    }
+    .content{
+        height: 603px;
+        border-top: 3px solid #d2b942;
+        border-left: 3px solid #d2b942;
+        border-right: 3px solid #d2b942;
+        box-sizing: border-box;
+        padding-top: 56px;
+    }
+    .content .bili{
+        height: 126px;
+        border-top: 1px solid #a7dcf1;
+    }
+    .zhu{
+        height: 63px;
+        padding-top: 14px;
+        border-top: 1px solid #a7dcf1;
+    }
+    .zhu p{
+        margin-left: 85px;
+        margin-top: 14px;
+        color: #103753;
+        font-size: 18px;
+    }
+    .btn{
+        height: 70px;
+        margin-top: 206px;
+        text-align: center;
+        border: none;
+    }
+    .btn a{
+        width: 220px;
+        height: 70px;
+    }
+    /*query*/
+    .query{
+        width: 100%;
+        height: 1246px;
+        background: url("../images/bg3_08.jpg") no-repeat center;
+        background-size: cover;
+        overflow: hidden;
+    }
+    .query-con{
+        width: 962px;
+        margin: 0 auto;
+    }
+    .reserve{
+        height: 244px;
+        border: 1px solid #77cff3;
+        border-radius: 20px;
+        margin-top: 65px;
+        background: rgba(250,250,250,.5);
+        padding-top: 23px;
+        margin-bottom: 39px;
+    }
+    .reserve div{
+        width: 798px;
+        height: 220px;
+        margin: 0 auto;
+        border: 2px solid #92c8c3;
+        border-radius: 20px;
+        background: #ffffff;
+    }
+    .reserve div img{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+    .hot{
+         margin-bottom: 54px;
+    }
+    .hot .xian img{
+        width: 56px;
+        height: 52px;
+        vertical-align: middle;
+        margin: -10px 17px 0 12px;
+    }
+    .hot-xian li {
+        width: 304px;
+        height: 348px;
+        border: 1px solid #ffffff;
+        border-radius: 10px;
+        margin-bottom: 25px;
+        float: left;
+    }
+    .hot-xian li img{
+        width: 304px;
+        height: 203px;
+        border-radius: 10px;
+    }
+    .hot-xian .zhong{
+        margin: 0 22px;
+    }
+    .shanghai{
+        width: 304px;
+        height: 235px;
+        margin-bottom: 3px;
+    }
+    .shanghai div{
+        text-align: center;
+        background: #f3c04a;
+        height: 32px;
+        line-height: 32px;
+        width: 302px;
+        border: 1px solid #ffffff;
+    }
+    .dan{
+        height: 110px;
+        background: #bdeafc;
+        overflow: hidden;
+        border-radius: 0 0 10px 10px;
+    }
+    .dan p{
+        display: inline;
+        margin-left: 22px;
+        color: #103753;
+        font-size: 15px;
+    }
+    .dan div{
+        margin-left: 35px;
+        font-size: 21px;
+        color: #103753;
+        margin-top: 10px;
+    }
+    .dan span{
+        color: #b13535;
+        font-size: 22px;
+    }
+    /*hint*/
+    .hint{
+        height: 618px;
+        background: #bdeafc;
+        overflow: hidden;
+    }
+    .guarantee{
+        width: 962px;
+        height: 618px;
+        margin: 0 auto;
+    }
+    .hint-logo{
+        margin-top: 41px;
+        margin-left: 2px;
+        margin-bottom: 25px;
+    }
+    .guar{
+        margin-left: 82px;
+    }
+    .hint-t{
+        margin-left: 82px;
+    }
+    .hint-t h1{
+        font-size: 20px;
+        font-weight: 600;
+        color: #103753;
+        margin-top: 23px;
+    }
+    .hint-t p{
+        line-height: 35px;
+        font-size: 20px;
+        color: #103753;
+    }
+   /*footer*/
+    footer{
+        height: 94px;
+    }
+    .fot{
+        width: 952px;
+        height: 94px;
+        margin: 0 auto;
+        padding: 0 5px;
+    }
+    .fot dl{
+        float: left;
+        margin-left: 35px;
+        width: 56px;
+    }
+    .fot dl dt{
+        text-align: center;
+        margin-top: 13px;
+        margin-bottom: 8px;
+    }
+    .fot dl dt i{
+        font-size: 42px;
+        color: #3162ac;
+
+    }
+
+
+
+
+}
+@media screen and (max-width: 600px){
+    header ul li {
+        display: none;
+    }
+    .banner{
+        width: 100%;
+        height: 250px;
+        background: url("../images/bg1_02.jpg") no-repeat center;
+        background-size: cover;
+    }
+    .lane{
+        display: none;
+    }
+    .query .xian{
+       display: none;
+    }
+    .reserve{
+        display: none;
+    }
+    .hot-xian .dan{
+        display: none;
+    }
+    .shanghai img{
+        width: 100%;
+        height: 250px;
+    }
+    .shanghai div{
+        font-size: 18px;
+        text-align: center;
+        background:#f3c04a ;
+    }
+    .guar img{
+        width: 100%;
+        height: 150px;
+    }
+    .hint-t h1{
+        font-size: 15px;
+        font-weight: 600;
+        color: #103753;
+        margin-top: 23px;
+    }
+    .hint-t p{
+        line-height: 25px;
+        font-size: 15px;
+        color: #103753;
+    }
+    footer{
+
+        height: 300px;
+        margin-bottom: 20px;
+    }
+    footer .fot dl{
+        width: 20%;
+        height: 80px;
+        float: left;
+        /*border: 1px solid #1b6d85;*/
+        /*box-sizing: border-box;*/
+    }
+    .fot dl dt{
+        text-align: center;
+    }
+    .fot dl dd{
+        text-align: center;
+    }
+    .fot dl dt i{
+        font-size: 40px;
+        color: #1b6d85;
+    }
+
+}
